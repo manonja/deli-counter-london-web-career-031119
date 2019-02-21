@@ -10,6 +10,7 @@ def line(people)
     end
     puts currentList
   end
+end
   
 
 def take_a_number(line, name)
