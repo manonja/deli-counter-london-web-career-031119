@@ -2,11 +2,11 @@
 
 def line(people)
   currentList = "The line is currently: "
-  if people.length == 0 
-    currentList.push("empty.")
-  else 
+  if people.length >= 1
     people.each.with_index(1) do |name, index| 
       currentList.push("#{index}. #{name}, ")
+  else 
+    
     end
     puts currentList
   end
