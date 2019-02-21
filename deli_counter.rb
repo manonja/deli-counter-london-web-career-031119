@@ -23,6 +23,8 @@ def now_serving(line)
   if line.length == 0 
     puts "There is nobody waiting to be served!"
   else 
-    currently_serving = line.shift()
-    puts "Currently serving #{c}."
+    name_served = line.shift()
+    puts "Currently serving #{name_served}."
+  end
+end
   
