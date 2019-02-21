@@ -2,10 +2,6 @@
 
 def line(people)
   list = []
-    if people.length == 0
-      puts "The line is currently empty."
-      
-    else
     people.each.with_index(1) do |name, index| 
       list.push("#{index}. #{name}")
     end
