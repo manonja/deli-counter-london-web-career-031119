@@ -14,7 +14,7 @@ def line(people)
 end
 
 def take_a_number(line, name)
-    newList = line.push(name)
-   puts "Welcome, #{name}. You are number #{newList.length} in line."
+    line.push(name)
+   puts "Welcome, #{name}. You are number #{line.length} in line."
   end
 end   
