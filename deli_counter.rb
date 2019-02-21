@@ -14,4 +14,10 @@ def line(people)
 end
 
 def take_a_number(line, name)
-  
+  if line.length == 0
+    return "There is nobody waiting to be served!"
+  else 
+    newList = line.push(name)
+   return "Welcome, #{name}. You are number #{newList.length} in line."
+  end
+end   
