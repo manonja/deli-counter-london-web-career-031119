@@ -8,7 +8,7 @@ def line(peopleInLine)
     end
     puts "The line is currently: #{people_list.join(" ")}."
     else
-     puts "The line is currently empty."
+    puts "The line is currently empty."
     end 
 end
 
