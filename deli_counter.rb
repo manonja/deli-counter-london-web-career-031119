@@ -1,18 +1,17 @@
 # Write your code here.
 
-def line(people)
-  currentList = "The line is currently: "
-  if people.length >= 1
-    people.each.with_index(1) do |name, index| 
-      currentList.push("#{index}. #{name}, ")
+def line(peopleInLine)
+  people_list = []
+    if peopleInLine.length >= 1 
+    peopleInLine.each.with_index(1) do |name, index| 
+      people_list.push("#{index}. #{name}")
     end
-    puts
-  else 
-    
-    end
-    puts currentList
-  end
+    puts "The line is currently: #{people_list.join(" ")}."
+    else
+     puts "The line is currently empty."
+    end 
 end
+
   
 
 def take_a_number(line, name)
