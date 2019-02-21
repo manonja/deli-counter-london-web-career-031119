@@ -13,4 +13,5 @@ def line(people)
   puts "The line is currently: #{list.join(" ")}."
 end
 
-def 
+def take_a_number(line, name)
+  
