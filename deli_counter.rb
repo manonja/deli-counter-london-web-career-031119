@@ -2,6 +2,9 @@
 
 def line(people)
   currentList = "The line is currently: "
+  if people.length == 0 
+    currentList.push("empty.")
+  else 
     people.each.with_index(1) do |name, index| 
       currentList.push("#{index}. #{name}, ")
     end
