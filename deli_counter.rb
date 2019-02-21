@@ -5,6 +5,8 @@ def line(people)
   if people.length >= 1
     people.each.with_index(1) do |name, index| 
       currentList.push("#{index}. #{name}, ")
+    end
+    puts
   else 
     
     end
