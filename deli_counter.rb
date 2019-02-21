@@ -1,15 +1,15 @@
 # Write your code here.
 
-def line(peopleInLine)
-  people_list = []
-    if peopleInLine.length >= 1 
-    peopleInLine.each.with_index(1) do |name, index| 
-      people_list.push("#{index}. #{name}")
-    end
-    puts "The line is currently: #{people_list.join(" ")}."
-    else
+def line(x)
+  line_array = []
+  if x.length == 0
     puts "The line is currently empty."
-    end 
+  else
+    x.each.with_index(1) do |name, index|
+      line_array.push("#{index}. #{name}")
+    end
+    puts "The line is currently: #{line_array.join(" ")}"
+  end
 end
 
   
