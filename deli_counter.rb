@@ -1,9 +1,9 @@
 # Write your code here.
 
 def line(people)
-  list = []
+  currentList = "The line is currently: "
     people.each.with_index(1) do |name, index| 
-      list.push("#{index}. #{name}")
+      currentList.push("#{index}. #{name}")
     end
   end
   puts "The line is currently: #{list.join(" ")}."
